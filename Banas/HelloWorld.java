@@ -17,6 +17,7 @@ public class HelloWorld {
         boolean happy = true;
         char a = 'a';
         float fNum = 1.11F;
+        float fAnother = 2.22F;
          
     }
 }
