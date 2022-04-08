@@ -22,8 +22,19 @@ public class HelloWorld {
         float fAnotheranotheranother = 4.44F;
         float fAnotheranotheranotheranother = 5.55F;
 
-
-
+        // ---- CONDITIONALS ----
+        // Relational Operators : == != > < >= <=
+        // Logical Operators : ! && ||
+        int age = 12;
+        if ((age >= 5) && (age <= 6)){
+            System.out.println("Go to Kindergarten");
+        } else if ((age >= 7) && (age <= 13)){
+            System.out.println("Go to Middle School");
+        } else if ((age >= 14) && (age <= 18)){
+            System.out.println("Go to High School");
+        } else {
+            System.out.println("Stay Home");
+        }
          
     }
 }
