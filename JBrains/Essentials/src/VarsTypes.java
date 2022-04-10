@@ -39,8 +39,29 @@ public class VarsTypes {
         int arr[] = {21, 22, 23, 24};
 
 
+        // declare and assign a 3 x 5 int array
+
+        int matrix[][] = new int[3][5];
 
 
+        // initialize a 3 x 4 array
+
+        int matrix2[][] = {
+                {21, 22, 23, 24},
+                {31, 32, 33, 34},
+                {81, 82, 83, 84},
+        };
+
+
+        // ternary operator example
+
+        int num = 0;
+        final String msg = num > 10 ? "Num is > 10" : "Num is <= 10";
+
+
+
+        // curly braces a way to define scope for vars
+        // local variables are local to their scope
 
 
 
