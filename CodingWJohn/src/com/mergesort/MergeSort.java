@@ -22,7 +22,7 @@ public class MergeSort {
     }
 
     private static void mergeSort(int[] numbers) {
-        
+
     }
 
 
