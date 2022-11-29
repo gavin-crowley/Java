@@ -2,23 +2,26 @@ import java.util.Scanner;
 
 public class HDipQ {
 
-    Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
 
-    String[] seatType = {"A", "B", "C"};
-    int[] numberSold = new int[3];
-    double[] ticketPrice  = new double[3];
+        Scanner scanner = new Scanner(System.in);
 
-    for (int i = 0; i < seatType.length; i++) {
-        System.out.println("Enter number of " + seatType[i] + " seats sold: ");
-        numberSold[i] = Integer.valueOf(scanner.nextLine());
-        System.out.println("Enter price of " + seatType[i] + " tickets: ");
-        ticketPrice[i] = Double.valueOf(scanner.nextLine());
-    }
+        String[] seatType = {"A", "B", "C"};
+        int[] numberSold = new int[3];
+        double[] ticketPrice = new double[3];
 
-    double totalSales = 0;
+        for (int i = 0; i < seatType.length; i++) {
+            System.out.println("Enter number of " + seatType[i] + " seats sold: ");
+            numberSold[i] = Integer.valueOf(scanner.nextLine());
+            System.out.println("Enter price of " + seatType[i] + " tickets: ");
+            ticketPrice[i] = Double.valueOf(scanner.nextLine());
+        }
+
+
+        double totalSales = 0;
         for (int i = 0; i < 3; i++) {
-        totalSales += numberSold[i] * ticketPrice[i];
-    }
+            totalSales += numberSold[i] * ticketPrice[i];
+        }
 
         System.out.println("            Tickets Sold    Price per Ticket");
         System.out.println("            ------------    ----------------");
@@ -27,7 +30,7 @@ public class HDipQ {
         System.out.println(seatType[2] + " Tickets:     " + numberSold[2] + "               " + ticketPrice[2]);
         System.out.println("");
         System.out.println("Total Sales: $ " + totalSales);
-
+    }
 }
 
 
