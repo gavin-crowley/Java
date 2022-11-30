@@ -10,8 +10,12 @@ import ViewEmployeeComponent from './components/ViewEmployeeComponent';
 
 function App() {
   return (
-    <div className='container'>
-      <ListEmployeeComponent />
+    <div>
+      <HeaderComponent />
+      <div className='container'>
+        <ListEmployeeComponent />
+      </div>
+      <FooterComponent />
     </div>
   );
 }
