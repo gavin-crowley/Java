@@ -11,11 +11,25 @@ import ViewEmployeeComponent from './components/ViewEmployeeComponent';
 function App() {
   return (
     <div>
-      <HeaderComponent />
-      <div className='container'>
-        <ListEmployeeComponent />
-      </div>
-      <FooterComponent />
+      <Router>
+        <div className='container'>
+          <HeaderComponent />
+          <div className='container'>
+            <Switch>
+              <Route path='/' exact component={ListEmployeeComponent}></Route>
+              <Route
+                path='/employees'
+                component={ListEmployeeComponent}
+              ></Route>
+              <Route
+                path='/add-employee'
+                component={CreateEmployeeComponent}
+              ></Route>
+            </Switch>
+          </div>
+          <FooterComponent />
+        </div>
+      </Router>
     </div>
   );
 }
