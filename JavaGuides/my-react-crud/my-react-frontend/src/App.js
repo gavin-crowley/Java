@@ -26,7 +26,7 @@ function App() {
                 component={CreateEmployeeComponent}
               ></Route>
               <Route
-                path='/update-employee:id'
+                path='/update-employee/:id'
                 component={UpdateEmployeeComponent}
               ></Route>
             </Switch>

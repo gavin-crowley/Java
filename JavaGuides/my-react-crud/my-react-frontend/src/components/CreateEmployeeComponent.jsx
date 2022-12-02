@@ -13,6 +13,7 @@ export default class CreateEmployeeComponent extends Component {
     this.changeFirstNameHandler = this.changeFirstNameHandler.bind(this);
     this.changeLastNameHandler = this.changeLastNameHandler.bind(this);
     this.changeEmailIdHandler = this.changeEmailIdHandler.bind(this);
+    this.saveEmployee = this.saveEmployee.bind(this);
   }
 
   saveEmployee = (e) => {
