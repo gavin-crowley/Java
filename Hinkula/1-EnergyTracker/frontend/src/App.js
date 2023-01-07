@@ -14,7 +14,7 @@ function App() {
           </Typography>
         </Toolbar>
       </AppBar>
-      <Carlist />
+      {/* <Carlist /> */}
     </div>
   );
 }
